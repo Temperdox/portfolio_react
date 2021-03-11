@@ -9,18 +9,51 @@ function App() {
       src: logo,
       alt: "C",
       title: "C",
-      content: ["sort","test","algorithm"],
-      buttons: ["Github","Github","Github"]
+      content: [
+        {
+          title: "Sort",
+          button: {title:"Github",href:"www.github.com"}
+        },
+        {
+          title: "Test",
+          button: {title:"Github",href:"www.github.com"}
+        },
+        {
+          title: "Algorithm",
+          button: {title:"Github",href:"www.github.com"}
+        }
+      ]
     }
   ]
 
-  let j = [
+  /*let j = [
     {
       src: logo,
       alt: "J",
       title: "J",
       content: ["search","vaadin","garbage collection"],
       buttons: ["Github","Github","Github"]
+    }
+  ]*/
+  let j = [
+    {
+      src: logo,
+      alt: "J",
+      title: "J",
+      content: [
+        {
+          title: "Search",
+          button: {title:"Github",href:"www.github.com"}
+        },
+        {
+          title: "Vaadin",
+          button: {title:"Github",href:"www.github.com"}
+        },
+        {
+          title: "Garbage Collection",
+          button: {title:"Github",href:"www.github.com"}
+        }
+      ]
     }
   ]
   let tabContent  = [c,j];
