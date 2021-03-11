@@ -1,8 +1,29 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Tab from './Tab';
 
 function App() {
+  let c = [
+    {
+      src: logo,
+      alt: "C",
+      title: "C",
+      content: ["sort","test","algorithm"],
+      buttons: ["Github","Github","Github"]
+    }
+  ]
+
+  let j = [
+    {
+      src: logo,
+      alt: "J",
+      title: "J",
+      content: ["search","vaadin","garbage collection"],
+      buttons: ["Github","Github","Github"]
+    }
+  ]
+  let tabContent  = [c,j];
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +39,15 @@ function App() {
         >
           Learn React
         </a>
+        {
+          tabContent.map(tab =>(
+            tab.map(content =>(
+                <>
+                  <Tab src={content.src} alt={content.alt} title={content.title} content={content.content}/>
+                </>
+            ))
+          ))
+        }
       </header>
     </div>
   );
