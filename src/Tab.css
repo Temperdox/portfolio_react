@@ -11,8 +11,22 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    width: 100%;
+    width: 250px;
     margin-top: 25px;
+    transition: all 300ms ease-in-out 300ms, background-color 0s;
+}
+
+.tabHeader\.extended{
+    width: 100%;
+    background-color: #A4CDE2;
+    margin-right: 50px;
+    border-radius: 10px 10px 0 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 300ms ease-in-out, background-color 0s;
 }
 
 .tabHeaderTitle{
@@ -24,18 +38,25 @@
 }
 
 .tabContent{
-    height: 0;
-    width: 100%;
+    height: 0px;
+    width: 80%;
     padding-top: 0;
-    /* margin-left: 50px; */
-    /* margin-right: 50px; */
     border-radius: 0px;
-    /* max-width: 100px; */
     display: block;
-    background-color: brown;
     position: relative;
     overflow: hidden;
-    transition: height 1s ease-in-out;
+    transition: all 300ms ease-in-out 0ms, background-color 0ms;
+    background-color: rgba(176, 115, 230, .4);
+
+}
+
+.tabContent\.extended{
+    height: 30vh !important;
+    overflow: hidden;
+    background-color: rgba(176, 115, 230, .4);
+    transition: all 300ms ease-in-out 300ms, background-color 0ms;
+    border-radius: 0 0 15px 15px;
+    width: 80%;
 }
 
 .tabListItem{
@@ -44,8 +65,10 @@
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
     position: relative;
+    padding-left: 10px;
 }
 
 .tabButton{
